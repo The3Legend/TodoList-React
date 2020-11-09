@@ -1,23 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const TodoList = () => {
-  return <h1>My Todo List</h1>;
-};
-const InputSerch = () => {
-  return <input placeholder="serch" />;
-};
-
-const TaskList = () => {
-  return (
-    <ul>
-      <li>Drink Coffe</li>
-      <li>Build Awesome App</li>
-    </ul>
-  );
-};
-
-
+import TodoList from "./components/todo-list";
+import InputSerch from './components/input-serch'
+import TaskList from './components/task-list'
 const App = () => {
   return (
     <div>
