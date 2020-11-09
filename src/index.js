@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const TodoList = () => {
+  return <h1>My Todo List</h1>;
+};
+const InputSerch = () => {
+  return <input placeholder="serch" />;
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const TaskList = () => {
+  return (
+    <ul>
+      <li>Drink Coffe</li>
+      <li>Build Awesome App</li>
+    </ul>
+  );
+};
+
+
+const App = () => {
+  return (
+    <div>
+      <TodoList />
+      <InputSerch />
+      <TaskList />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
